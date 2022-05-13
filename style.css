@@ -21,8 +21,8 @@ p {
     --fs-1: 4.0rem;
     --fs-2: 3.2rem;                             /* fs = font size */
     --fs-3: 2.4rem;
-    --fs-p-m: 1.8rem;                           /* p-m = paragraph medium */
-    --fs-p-s: 1.6rem;
+    --fs-m: 1.8rem;                             /* m = medium */
+    --fs-s: 1.6rem;                             /* s = small */
 
     --flh-0: 7.0rem;                            /* flh = font line height */
     --flh-1: 5.1rem;
@@ -44,30 +44,54 @@ p {
     --light-clr-fp: #FFa7C3;
     --light-clr-w:  #FFF;
 
-    /* 
-    Trialing gradients in variables, I don't know if they will work. 
-    Handle it in the html if they don't. Here is a good article: 
-    https://css-tricks.com/the-big-gotcha-with-custom-properties/ 
-    Also, and probably the easiest, Figma file has the specific gradient properties.
-    */
-    --gradient-clr-po: #F02AA6 - #FF6F48;
-    --gradient-clr-pp: #4851FF - #F02AA6;
+    --gradient-clr-1: #F02AA6;
+    --gradient-clr-2: #4851FF;
+    --gradient-1: linear-gradient(#FF6F48, #F02AA6);
+    --gradient-2: linear-gradient(#4851FF, #F02AA6); 
   }
 
 
 /* General styles */
+.button {
+  font-family: var(--ff);
+  font-size: var(--fs-p-m);
+  font-weight: 700;
+  text-decoration: none;
 
+  border: none;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+  padding: 1em;
+}
 
 /* General typography */
 
 
-/* Header section */
+/* Container */
+.container {
+  margin: 2em;
+}
 
+/* Header section */
+#header-btn {
+  color: var(--light-clr-w);
+  background-color: var(--dark-clr-vdb);
+}
 
 /* Hero section */
+#hero-btn {
+  color: var(--light-clr-w);
+  background: var(--gradient-clr-1);
+  background: var(--gradient-1);
+}
 
 
 /* Course item section */
 
 
 /* Footer section */
+#footer-btn {
+  color: var(--light-clr-w);
+  background: var(--gradient-clr-2);
+  background: var(--gradient-2);
+}

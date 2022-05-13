@@ -1,0 +1,7 @@
+Linear gradients and CSS variables
+    I have found that I cannot include my custom property variables in the parantheses of a linear gradient function. There is no problem when I include the specific colour references (hexadecimal, hsl etc) and this produces the desired result.
+
+    I reuse the same gradient colour scheme and direction at several points on the site, so it would be convenient to have the gradient as a custom variable. I'm going to play around with it.
+
+    *2 minutes later*
+    It works! I transferred the linear gradient function to the custom variable section, and then simply named the variable in the CSS section I wanted to employ it. Nice little discovery.
