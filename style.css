@@ -1,0 +1,73 @@
+/* Reset properties */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+main,
+h1, h2, h3,
+p {
+    margin: 0;
+}
+
+  
+/* Custom Properties */
+  :root {
+    
+    font-size: 10px;
+    --fs-0: 5.6rem;
+    --fs-1: 4.0rem;
+    --fs-2: 3.2rem;                             /* fs = font size */
+    --fs-3: 2.4rem;
+    --fs-p-m: 1.8rem;                           /* p-m = paragraph medium */
+    --fs-p-s: 1.6rem;
+
+    --flh-0: 7.0rem;                            /* flh = font line height */
+    --flh-1: 5.1rem;
+    --flh-2: 4.0rem;
+    --flh-3: 2.8rem;
+    --flh-p: 2.8rem;
+
+    --ff: 'Plus Jakarta Sans', sans-serif;
+    --fw-m: 500;
+    --fw-b: 700;
+    --fw-xb: 800;
+
+    
+    --dark-clr-vdb: #13183F;                    /* Very dark blue - headers, footer bg, button */
+    --dark-clr-gb: #666CA3;                     /* Grey blue - not sure where it is used yet */
+    --dark-clr-g: #82869A;                      /* Grey - paragraphs */
+
+    --light-clr-sp: #F74780;
+    --light-clr-fp: #FFa7C3;
+    --light-clr-w:  #FFF;
+
+    /* 
+    Trialing gradients in variables, I don't know if they will work. 
+    Handle it in the html if they don't. Here is a good article: 
+    https://css-tricks.com/the-big-gotcha-with-custom-properties/ 
+    Also, and probably the easiest, Figma file has the specific gradient properties.
+    */
+    --gradient-clr-po: #F02AA6 - #FF6F48;
+    --gradient-clr-pp: #4851FF - #F02AA6;
+  }
+
+
+/* General styles */
+
+
+/* General typography */
+
+
+/* Header section */
+
+
+/* Hero section */
+
+
+/* Course item section */
+
+
+/* Footer section */
