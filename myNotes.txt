@@ -5,5 +5,9 @@ Linear gradients and CSS variables
 
     *2 minutes later*
     It works! I transferred the linear gradient function to the custom variable section, and then simply named the variable in the CSS section I wanted to employ it. Nice little discovery.
+
 Shadow on 2nd button
     I must have searched for a full hour just to find a similar example of a shadow being cast foward onto a surfacxe in front of the item. Nothing. I'm sure if I read the articles, set up a sandbox, and tested all different possible paramters I would have eventually discovered it. But I'm trying to get something done here, not becaome the world's second foremost expert on CSS shadow casting. I just went witha standard box shadow.
+
+Positioning an element outside of it's container without clipping it.
+    I tried 4 different methods, and finally figured out how to position the icons on each course item half outside the top of the container. It was really simple and makes no syntactical sense, but a negative margin will position it out. No need for absolute positioning either.
