@@ -53,15 +53,10 @@ p {
 
 /* General styles */
 .button {
-  font-family: var(--ff);
-  font-size: var(--fs-p-m);
-  font-weight: 700;
-  text-decoration: none;
 
   border: none;
-  border-radius: 2rem;
-  margin-bottom: 2rem;
-  padding: 1em;
+  border-radius: 3rem;
+  padding: 1em 2em;
 }
 
 /* General typography */
@@ -104,6 +99,13 @@ p {
   text-decoration: none;
 }
 
+button {
+  font-family: var(--ff);
+  font-size: var(--fs-s);
+  font-weight: 700;
+  text-decoration: none;
+}
+
 /* Body and main*/
 body {
   background: var(--light-clr-w);
@@ -111,45 +113,68 @@ body {
   /* padding: 2em; */
 }
 
-/* Container */
-.container {
-  margin: 2em;
-  min-width: 100%;
-  /* outline: 2px solid black; */
+/* Header section */
+header {
+  padding: 1.5em;
 }
 
-/* Header section */
-#header-btn {
+.header-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* outline: 2px solid blue; */
+}
+
+.header-logo img {
+  max-height: 35px;
+  max-width: 89px;
+  /* outline: 2px solid blue; */
+}
+.header-logo button {
   color: var(--light-clr-w);
   background-color: var(--dark-clr-vdb);
 }
 
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* outline: 2px solid black; */
+}
+
 /* Hero section */
+.hero {
+  padding: 2em;
+}
+
 #hero-btn {
   color: var(--light-clr-w);
   background: var(--gradient-clr-1);
   background: var(--gradient-1);
+  
+  filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.35));
 }
 
-/* A note on the hero image.
-What I had originally thought was a requirement to crop the img myself may be a 
-requirement to simplay center the img and let it flow outside the 375px frame.
-As it stands, the image is pushing the main container right edge in as it pushes 
-off the right side of the screen frame */
+.hero-img {
+  min-width: 425px;           /* ? - This expands img to it's background color border*/
+  /* outline: 2px solid black; */
+}
+
 #hero-img-mobile {
-  outline: 2px solid gray;
+  max-width: 100%;
   margin: 0;
 }
 
 /* Course item section */
 .course-item-list {
-  min-width: 100%;
+  padding: 2em;
   /* outline: 2px solid red; */
 }
 .course-item-container {
   background: var(--light-clr-sp);
   background: var(--gradient-1);
-  width: 100%;
+  padding: 2.8em;
   border-radius: 1em;
   /* outline: 2px solid blue; */
 }
@@ -165,8 +190,25 @@ off the right side of the screen frame */
 /* Footer section */
 footer {
   background-color: var(--dark-clr-vdb);
-  min-width: 100%;
+  padding: 4em 1.5em;
 }
+ 
+.footer-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* outline: 2px solid blue; */
+}
+.footer-logo img {
+  max-height: 35px;
+  max-width: 89px;
+  /* outline: 2px solid blue; */
+}
+.footer-logo button {
+  color: var(--light-clr-w);
+  background: var(--gradient-clr-2);
+  background: var(--gradient-2);
+} 
 
 #footer-btn {
   color: var(--light-clr-w);
