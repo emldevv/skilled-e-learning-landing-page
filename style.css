@@ -48,12 +48,14 @@ p {
     --gradient-clr-2: #4851FF;
     --gradient-1: linear-gradient(#FF6F48, #F02AA6);
     --gradient-2: linear-gradient(#4851FF, #F02AA6); 
-  }
+  
 
+    /* Padding properties */
+    --padd-gen: 1.6em;
+  }
 
 /* General styles */
 .button {
-
   border: none;
   border-radius: 3rem;
   padding: 1em 2em;
@@ -110,12 +112,16 @@ button {
 body {
   background: var(--light-clr-w);
   background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+  max-width: 100%;
+  min-width: 375px;
   /* padding: 2em; */
 }
 
 /* Header section */
 header {
-  padding: 1.5em;
+  padding: var(--padd-gen);
+  min-width: 100%;
+  outline: 2px solid blue;
 }
 
 .header-logo {
@@ -126,8 +132,8 @@ header {
 }
 
 .header-logo img {
-  max-height: 35px;
-  max-width: 89px;
+  max-height: 3.5em;
+  max-width: 8.9em;
   /* outline: 2px solid blue; */
 }
 .header-logo button {
@@ -145,19 +151,21 @@ header {
 
 /* Hero section */
 .hero {
-  padding: 2em;
+  padding: var(--padd-gen);
 }
 
+.hero .hero-p {
+  margin: 1.5em 0;
+}
 #hero-btn {
   color: var(--light-clr-w);
   background: var(--gradient-clr-1);
   background: var(--gradient-1);
-  
   filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.35));
 }
 
 .hero-img {
-  min-width: 425px;           /* ? - This expands img to it's background color border*/
+  min-width: 42.4em;           /* ? - This expands img to it's background color border*/
   /* outline: 2px solid black; */
 }
 
@@ -168,7 +176,7 @@ header {
 
 /* Course item section */
 .course-item-list {
-  padding: 2em;
+  padding: var(--padd-gen);
   /* outline: 2px solid red; */
 }
 .course-item-container {
@@ -190,7 +198,8 @@ header {
 /* Footer section */
 footer {
   background-color: var(--dark-clr-vdb);
-  padding: 4em 1.5em;
+  padding: 3.6em 1.6em;
+  min-width: 100%;
 }
  
 .footer-logo {
