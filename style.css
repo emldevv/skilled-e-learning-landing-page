@@ -49,7 +49,12 @@ p {
     --gradient-clr-2: #4851FF;
     --gradient-1: linear-gradient(#FF6F48, #F02AA6);
     --gradient-2: linear-gradient(#4851FF, #F02AA6); 
-  
+
+    /* Hover state properties */
+    --btn1-hover-clr: rgba(19, 24, 63, .7);
+    --btn2-hover-clr: rgba(240, 42, 166, .7);
+    --btn3-hover-clr: rgba(72, 81, 255, .7);
+    --link-hover-clr: rgba(247, 71, 128, .5);
 
     /* Padding properties */
     --padd-gen: 1.6em;
@@ -60,6 +65,10 @@ p {
   border: none;
   border-radius: 3rem;
   padding: 1em 2em;
+}
+
+.button:hover {
+  opacity: 0.7;
 }
 
 /* General typography */
@@ -214,6 +223,10 @@ header {
   margin-bottom: 1em;
 }
 
+.item-link:hover {
+  opacity: 0.5;
+}
+
 /* Footer section */
 footer {
   background-color: var(--dark-clr-vdb);
@@ -227,16 +240,13 @@ footer {
   align-items: center;
   /* outline: 2px solid blue; */
 }
+
 .footer-logo img {
   max-height: 35px;
   max-width: 89px;
   /* outline: 2px solid blue; */
 }
-.footer-logo button {
-  color: var(--light-clr-w);
-  background: var(--gradient-clr-2);
-  background: var(--gradient-2);
-} 
+
 
 #footer-btn {
   color: var(--light-clr-w);
