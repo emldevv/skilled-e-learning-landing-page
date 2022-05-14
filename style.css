@@ -15,7 +15,7 @@ p {
   
 /* Custom Properties */
   :root {
-    
+    /* Font properties */
     font-size: 10px;
     --fs-0: 5.6rem;
     --fs-1: 4.0rem;
@@ -35,10 +35,10 @@ p {
     --fw-b: 700;
     --fw-xb: 800;
 
-    
+    /* Colour properties */
     --dark-clr-vdb: #13183F;                    /* Very dark blue - headers, footer bg, button */
-    --dark-clr-gb: #666CA3;                     /* Grey blue - not sure where it is used yet */
-    --dark-clr-g: #82869A;                      /* Grey - paragraphs */
+    --dark-clr-gb: #666CA3;                     /* Gray blue - not sure where it is used yet */
+    --dark-clr-g: #82869A;                      /* Gray - paragraphs */
 
     --light-clr-sp: #F74780;
     --light-clr-fp: #FFa7C3;
@@ -65,11 +65,57 @@ p {
 }
 
 /* General typography */
+h1, h2, h3,
+p {
+    font-family: var(--ff);
+}
 
+h1 {
+  font-size: var(--fs-1);
+  font-weight: var(--fw-xb);
+  color: var(--dark-clr-vdb);
+  line-height: var(--flh-1);
+}
+
+h2 {
+  font-size: var(--fs-2);
+  font-weight: var(--fw-b);
+  line-height: var(--flh-2);
+}
+
+h3 {
+  font-size: var(--fs-3);
+  font-weight: var(--fw-xb);
+  line-height: var(--flh-3);
+}
+
+p {
+  font-size: var(--fs-s);
+  font-weight: var(--fw-m);
+  color: var(--dark-clr-g);
+  line-height: var(--flh-p);
+}
+
+.item-link {
+  font-family: var(--ff);
+  font-size: var(--fs-m);
+  font-weight: var(--fw-b);
+  color: var(--light-clr-sp);
+  text-decoration: none;
+}
+
+/* Body and main*/
+body {
+  background: var(--light-clr-w);
+  background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+  /* padding: 2em; */
+}
 
 /* Container */
 .container {
   margin: 2em;
+  min-width: 100%;
+  /* outline: 2px solid black; */
 }
 
 /* Header section */
@@ -85,11 +131,43 @@ p {
   background: var(--gradient-1);
 }
 
+/* A note on the hero image.
+What I had originally thought was a requirement to crop the img myself may be a 
+requirement to simplay center the img and let it flow outside the 375px frame.
+As it stands, the image is pushing the main container right edge in as it pushes 
+off the right side of the screen frame */
+#hero-img-mobile {
+  outline: 2px solid gray;
+  margin: 0;
+}
 
 /* Course item section */
+.course-item-list {
+  min-width: 100%;
+  /* outline: 2px solid red; */
+}
+.course-item-container {
+  background: var(--light-clr-sp);
+  background: var(--gradient-1);
+  width: 100%;
+  border-radius: 1em;
+  /* outline: 2px solid blue; */
+}
 
+.course-item-header {
+  color: var(--light-clr-w);
+}
+
+.course-item-title {
+  color: var(--dark-clr-vdb);
+}
 
 /* Footer section */
+footer {
+  background-color: var(--dark-clr-vdb);
+  min-width: 100%;
+}
+
 #footer-btn {
   color: var(--light-clr-w);
   background: var(--gradient-clr-2);
