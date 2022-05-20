@@ -201,7 +201,9 @@ body {
 }
 
 /* Main */
-
+.main {
+  padding-top: 0;
+}
 .main-header {
     color: var(--light-clr-w);
 }
@@ -209,6 +211,7 @@ body {
 .header-box {
   background: var(--light-clr-sp);
   background: var(--gradient-1);
+  margin-top: 0;
   padding: 3rem 2.8em;
 }
 
