@@ -266,6 +266,10 @@ footer {
   /* ------------Media queries to be redone in light of code overhaul----------------- */
   @media (min-width: 600px) {
     /* General Styling */
+    body {
+      max-width: 768px;
+      margin: 0 auto;
+    }
     .container {
       padding: var(--padd-ipad);
     }
