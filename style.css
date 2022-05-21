@@ -307,10 +307,13 @@ footer {
 
     .box {
       max-width: 50%;
+      flex: 1;
+      margin: 2em .5em 3em .5em;
+      min-width: 40%;
     }
     
     .header-box {
-      margin-top: 4em;
+      padding-top: 5.3em;
     }
   }
 /* @media(min-width: 768px) {
