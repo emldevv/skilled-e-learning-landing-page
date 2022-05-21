@@ -294,7 +294,20 @@ footer {
     #hero-img-desktop {
       display: none;
     }
-    /*  */
+    
+    /* Main */
+    .main {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      max-width: 50%;
+    }
+    
+    .header-box {
+      margin-top: 4em;
+    }
   }
 /* @media(min-width: 768px) {
   header {
