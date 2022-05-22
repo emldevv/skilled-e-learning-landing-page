@@ -11,3 +11,8 @@ Shadow on 2nd button
 
 Positioning an element outside of it's container without clipping it.
     I tried 4 different methods, and finally figured out how to position the icons on each course item half outside the top of the container. It was really simple and makes no syntactical sense, but a negative margin will position it out. No need for absolute positioning either.
+
+    Revisited: DON'T use position absolute with margin adjustments. It is too unpredictable when switching resolutions across devices. The image moves from device to device. The advice I was given by a legend called Chamu, was to use flex and make sure hero container and hero-img have the same parent.
+
+Switching-resolution and Art direction
+    

@@ -16,11 +16,10 @@
     <header class="header row">
         <div class="container">
             <img src="assets/logo-dark.svg" alt="skilled logo" class="header-logo">
-            <button href="#" class="header-btn">Get Started</button>
+            <a class="button header-btn" href="#">Get Started</a>
         </div>
     </header>
 <!-- Hero section -->
-    <!-- <div class="container"> -->
       <div class="hero container">
         <section class="hero-text">
             <h1>Maximize skill, minimize budget</h1>
@@ -28,18 +27,40 @@
                 Our modern courses across a range of in-demand skills will give you the
                 knowledge you need to live the life you want.
             </p>
-            <button class="hero-btn" href="#">Get Started</button>
+            <a class="button hero-btn" href="#">Get Started</a>
         </section>    
     </div>
-    <img src="assets/image-hero-mobile.png" alt="" class="hero-img hero-img-mobile" >
+    <!-- Below is the progress on the recommendation I was given through FE Mentor. I don't particularly
+    need the desktop 2x thing, I was just trying the image density tool. I'm up to part 6, but I need to 
+    read all 10 parts -->
+
+    <!-- Latest method, as I try to figure out how srcset works -->
+    <img class="hero-img"
+        src="assets/image-hero-mobile.png" 
+        srcset="assets/image-hero-mobile.png 320w, assets/image-hero-tablet.png 600w, assets/image-hero-desktop.png 900w" 
+        sizes="80vw"
+        alt="student" 
+        >
+    <!-- srcset="assets/image-hero-mobile.png 320w, assets/image-hero-tablet.png 600w, assets/image-hero-desktop.png 900w"  -->
+    
+    <!-- Picture method, still figuring out as images aren't loading -->
+    <!-- <picture>
+        <source media="(990)" srcset="assets/image-hero-desktop.png, assets/image-hero-desktop@2x.png 2x">
+        <source media="(600)" srcset="assets/image-hero-tablet.png, assets/image-hero-tablet@2x.png 2x">
+        <img src="assets/image-hero-mobile.png, assets/image-hero-mobile@2x.png 2x" alt="Student">
+    </picture> -->
+
+    <!-- Original method -->
+    <!-- <img src="assets/image-hero-mobile.png" alt="" class="hero-img hero-img-mobile" >
     <img src="assets/image-hero-tablet.png" alt="" class="hero-img hero-img-tablet" >
-    <img src="assets/image-hero-desktop.png" alt="" class="hero-img hero-img-desktop">
+    <img src="assets/image-hero-desktop.png" alt="" class="hero-img hero-img-desktop"> -->
+
 <!-- Main section -->
     <main class="main container">
         <div class="box header-box">
             <h2 class="main-header">Check out our most popular courses!</h2>
         </div>
-<!-- Animation box -->
+    <!-- Animation box -->
         <div class="box animation-box">
             <img src="assets/icon-animation.svg" alt="">
             <h3 class="box-title" id="animation-header">Animation</h3>
@@ -50,7 +71,7 @@
             <a href="#" class="box-link" id="animation-link">Get Started</a>
         </div>
     
-<!-- Design box -->
+    <!-- Design box -->
         <div class="box design-box">
             <img src="assets/icon-design.svg" alt="">
             <h3 class="box-title" id="design-header">Design</h3>
@@ -94,11 +115,11 @@
             <a href="#" class="box-link" id="business-link">Get Started</a>
         </div>
     </main>
-        <!-- Footer section -->
+<!-- Footer section -->
     <footer class="footer row">
         <div class="container footer">
             <img src="assets/logo-light.svg" alt="skilled logo">
-            <button href="#" class="button" id="footer-btn">Get Started</button>
+            <a class="button footer-btn" href="#">Get Started</a>
         </div>
     </footer>
 </body>
