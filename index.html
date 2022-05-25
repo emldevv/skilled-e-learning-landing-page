@@ -28,32 +28,15 @@
                 knowledge you need to live the life you want.
             </p>
             <a class="button hero-btn" href="#">Get Started</a>
-        </section>    
+        </section>
+        <picture class="hero-img">
+            <source srcset="assets/image-hero-desktop.png, assets/image-hero-desktop@2x.png 2x" media="(min-width: 900px)" >
+            <source srcset="assets/image-hero-tablet.png, assets/image-hero-tablet@2x.png 2x" media="(min-width: 600px)">
+            <source srcset="assets/image-hero-mobile.png, assets/image-hero-mobile@2x.png 2x" media="(min-width: 280px)">
+            <img src="assets/image-hero-mobile.png, assets/image-hero-mobile@2x.png 2x" alt="Student">
+        </picture>    
     </div>
-    <!-- Below is the progress on the recommendation I was given through FE Mentor. I don't particularly
-    need the desktop 2x thing, I was just trying the image density tool. I'm up to part 6, but I need to 
-    read all 10 parts -->
-
-    <!-- Latest method, as I try to figure out how srcset works -->
-    <img class="hero-img"
-        src="assets/image-hero-mobile.png" 
-        srcset="assets/image-hero-mobile.png 320w, assets/image-hero-tablet.png 600w, assets/image-hero-desktop.png 900w" 
-        sizes="80vw"
-        alt="student" 
-        >
-    <!-- srcset="assets/image-hero-mobile.png 320w, assets/image-hero-tablet.png 600w, assets/image-hero-desktop.png 900w"  -->
     
-    <!-- Picture method, still figuring out as images aren't loading -->
-    <!-- <picture>
-        <source media="(990)" srcset="assets/image-hero-desktop.png, assets/image-hero-desktop@2x.png 2x">
-        <source media="(600)" srcset="assets/image-hero-tablet.png, assets/image-hero-tablet@2x.png 2x">
-        <img src="assets/image-hero-mobile.png, assets/image-hero-mobile@2x.png 2x" alt="Student">
-    </picture> -->
-
-    <!-- Original method -->
-    <!-- <img src="assets/image-hero-mobile.png" alt="" class="hero-img hero-img-mobile" >
-    <img src="assets/image-hero-tablet.png" alt="" class="hero-img hero-img-tablet" >
-    <img src="assets/image-hero-desktop.png" alt="" class="hero-img hero-img-desktop"> -->
 
 <!-- Main section -->
     <main class="main container">

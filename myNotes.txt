@@ -15,4 +15,9 @@ Positioning an element outside of it's container without clipping it.
     Revisited: DON'T use position absolute with margin adjustments. It is too unpredictable when switching resolutions across devices. The image moves from device to device. The advice I was given by a legend called Chamu, was to use flex and make sure hero container and hero-img have the same parent.
 
 Switching-resolution and Art direction
-    
+    This took me 3-days (of mornings) to learn. Whilst I started with an article on art direction, I actually went back to the start of the series that the article was a part of and learned about resolution switching properties , and then art direction. I learned a lot about responsiveness and found it complex an difficult to understand, but I think I will get better and quicker at it as I use it more.
+
+    The difference is determine your use case. The 2 most common/important use cases are:
+    1. Are you using the same image across multiple viewport widths? You are using RESOLUTION SWITCHING and you can use srcset().
+    2. Are you interchanging images according to viewport widths? You are using ART DIRECTION and you can use <picture>.
+    3. Are you doing both? You are suing both, and can apply <picture> srcset() </picture>.
